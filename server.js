@@ -21,7 +21,7 @@ app.use(cors());
 
 // Initialize the main project folder
 app.use(express.static("website"));
-
+app.use(express.json());
 // Setup Server
 const port = 3000;
 app.listen(port,() =>{console.log(`listening on port ${port}`)});
@@ -31,3 +31,6 @@ app.listen(port,() =>{console.log(`listening on port ${port}`)});
 // Callback function to complete GET '/all'
 
 // Post Route
+app.post('/api',(request,response) =>{
+  console.log(request.body);
+})
