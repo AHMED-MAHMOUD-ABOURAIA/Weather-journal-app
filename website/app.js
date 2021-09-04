@@ -1,7 +1,7 @@
 /* Function called by event listener */
 const performAction = () => {
   // Personal API Key for OpenWeatherMap API
-  const apiKey = `1f6af742306ac418d83e4bcf692a8808`;
+  const apiKey = `1f6af742306ac418d83e4bcf692a8808&units=metric`;
   let zipCode = document.getElementById("zip").value;
   const baseUrl = `https://api.openweathermap.org/data/2.5/weather?zip=${zipCode},us&appid=${apiKey}`;
 
