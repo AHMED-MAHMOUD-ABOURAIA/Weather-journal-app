@@ -54,7 +54,7 @@ const performAction = () => {
 
       document.getElementById(
         "temp"
-      ).innerHTML = `Here is your Weather-Forcast for today🧐: ${temp}`;
+      ).innerHTML = `Here is your Weather-Forcast🧐: ${temp}`;
 
       document.getElementById(
         "content"
