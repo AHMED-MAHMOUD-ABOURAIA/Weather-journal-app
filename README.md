@@ -1,10 +1,10 @@
-# Weather-journal-app
+# Weather Journal App project
 
 ### Project description:
 
 ##### This is my second Udacity Nanodegree project and it's all about:
 
-a responsive weather app that can be displayed in every kind of devices, this app inable users to enter there zip code and get the weather forcasting right away. 
+a responsive weather app that can be displayed in every kind of devices, this app inable users to enter there zip code and get the weather forcasting right away.
 
 ### Technologies used to create the project:
 
