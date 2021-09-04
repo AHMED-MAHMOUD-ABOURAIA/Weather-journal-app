@@ -1,6 +1,5 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
-// Setup empty JS object to act as endpoint for all routes
-// const projectData = {};
 
 // Require Express to run server and routes
 const express = require('express');
@@ -28,9 +27,25 @@ app.listen(port,() =>{console.log(`listening on port ${port}`)});
 
 // Initialize all route with a callback function
 
-// Callback function to complete GET '/all'
+// Setup empty JS object to act as endpoint for all routes
+let projectData = {};
 
 // Post Route
-app.post('/api',(request,response) =>{
-  console.log(request.body);
-})
+app.post('/api', addData)
+
+function addData(request,response){
+  const temp = request.body.main.temp;
+  const newEntry = {
+    temp: temp,
+  }
+  projectData = newEntry;
+}
+
+
+//Get Route
+app.get("/all", sendData);
+
+function sendData(req, res) {
+  res.send(projectData)
+  console.log(projectData)
+}
